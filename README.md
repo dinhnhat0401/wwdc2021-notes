@@ -24,29 +24,31 @@ SwiftUIReplicator(?)
 
 
 WWDC 2021 — June 7 | Apple
-iOS 15
+### iOS 15
 
-FaceTime: Spatial audio, video call voice effect, voice wide spectrum
-Movie/music share play. share play + air play 
-iMessage improvement about display & react with images, sharing
-Notification Summary: based on priority, time, user interaction with apps
-New mode: do not disturb > focus(customizable) > normal 
-Photo:
-*  Built-in Hand writing recognition
-* Apple music to use with slide creation
-Use iphone as Key for car, home, ...
-Weather UI Updates
-Apple Maps: privacy focus -> >< Google, lol, more details, street recognition
+- FaceTime: Spatial audio, video call voice effect, voice wide spectrum
+- Movie/music share play. share play + air play 
+- iMessage improvement about display & react with images, sharing
+- Notification Summary: based on priority, time, user interaction with apps
+- New mode: do not disturb > focus(customizable) > normal 
+- Photo:
+  *  Built-in Hand writing recognition
+  * Apple music to use with slide creation
+- Use iphone as Key for car, home, ...
+- Weather UI Updates
+- Apple Maps: privacy focus -> >< Google, lol, more details, street recognition
 
 Developer betas today. Public betas next month.
-iPadOS 15
 
-new widgets, app library
-Multitasking: menu on top, split view between apps, app shelf
-QuickNote: iPadOS, MacOS
-Translate with image recognition
-Swift Playground, Build app with iPad
-Privacy:
+## iPadOS 15
+
+- new widgets, app library
+- Multitasking: menu on top, split view between apps, app shelf
+- QuickNote: iPadOS, MacOS
+- Translate with image recognition
+- Swift Playground, Build app with iPad
+
+## Privacy:
 
 * Mail privacy protection, hide ip address, location, hide if you open email
 * Safari: prevent xss
@@ -59,7 +61,8 @@ iCloud
 * iCloud+ Private relay
 * Hide my email
 * Homekit secure video
-Health
+
+## Health
 
 * health API
     * CareKit
@@ -76,11 +79,13 @@ WatchOS
 * Breath: meiso?🙂, while sleeping
 * Workout
 * Photo app on WatchOS
-Home
+
+## Home
 
 * HomePod
 * HomeKit
-macOS Monterey
+
+## macOS Monterey
 
 * macOS Monterey
 * Universal Control
@@ -88,7 +93,8 @@ macOS Monterey
 * Shortcuts
 * Safari new tab design
 * Web extension safari
-Developer Technologies
+
+## Developer Technologies
 
 * API
     * AR: Object capture to create 3D content from 2D image
