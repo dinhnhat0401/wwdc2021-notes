@@ -1,1 +1,11 @@
-meet async/await
+# meet async/await
+
+How await/async works?
+
+Q1 How to use await/async
+
+Q2 How to bridge between async and sync function
+
+Q3 How to bridge between callback/delegate and await/async
+
+Note
