@@ -5,6 +5,9 @@
 swift syntax to write asynchronous code.
 available from swift 5.5
 
+Async functions let you write concurrent code without the need for callbacks, by using the await keyword.
+Calling an async function will suspend and then be resumed whenever a value or error is produced.
+
 - How to use await/async
 
 Fetching a thumbnail: (Sample from wwdc2021)
