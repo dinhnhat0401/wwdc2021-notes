@@ -91,4 +91,34 @@ struct ThumbnailView: View {
 
 - How to bridge between callback/delegate and await/async
 
+```
+// Existing function
+func getPersistentPosts(completion: @escaping ([Post], Error?) -> Void) {       
+    do {
+        let req = Post.fetchRequest()
+        req.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+        let asyncRequest = NSAsynchronousFetchRequest<Post>(fetchRequest: req) { result in
+            completion(result.finalResult ?? [], nil)
+        }
+        try self.managedObjectContext.execute(asyncRequest)
+    } catch {
+        completion([], error)
+    }
+}
+
+// Async alternative
+func persistentPosts() async throws -> [Post] {       
+    typealias PostContinuation = CheckedContinuation<[Post], Error>
+    return try await withCheckedThrowingContinuation { (continuation: PostContinuation) in
+        self.getPersistentPosts { posts, error in
+            if let error = error { 
+                continuation.resume(throwing: error) 
+            } else {
+                continuation.resume(returning: posts)
+            }
+        }
+    }
+}
+```
+
 Note
